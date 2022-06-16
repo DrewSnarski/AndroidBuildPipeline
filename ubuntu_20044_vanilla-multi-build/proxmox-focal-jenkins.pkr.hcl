@@ -97,7 +97,7 @@ source "proxmox-iso" "proxmox-focal-jenkins" {
   ssh_timeout              = "20m"
   ssh_wait_timeout         = "1200s"
   template_description     = "A Packer template to create a Focal database"
-  vm_name                  = "${var.DBNAME}"
+  vm_name                  = "${var.NAME}"
 }
 
 build {
