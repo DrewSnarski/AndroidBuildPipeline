@@ -59,7 +59,7 @@ variable "restrict-firewall-access-to-this-ip-range-proxmox" {
 ############################################################################################
 variable "NODENAME" {
   type    = string
-  default = ""
+  default = "proxmonster3"
 }
 
 variable "USERNAME" {
@@ -77,7 +77,7 @@ variable "PROXMOX_TOKEN" {
 variable "URL" {
   type = string
   # https://x.x.x.x:8006/api2/json
-  default = ""
+  default = "192.168.172.41:8006/api2/json"
 }
 ############################################################################################
 # MEMORY, DISKSIZE, STORAGEPOOL, NUMBEROFCORES can all be left at default setting. These could
@@ -102,42 +102,11 @@ variable "NUMBEROFCORES" {
   type    = string
   default = "1"
 }
-############################################################################################
-# This is the name of the Public Key.  One more key pair you need to generate. 
-############################################################################################
-variable "KEYNAME" {
-  type = string
-  # Name of public key to insert to the template - locate this key in the same directory as the
-  # packer build template
-  default = ""
-}
 
 # This is the name of the Virtual Machine Template you want to create
-variable "LBNAME" {
+variable "NAME" {
   # Use this standard and replace the XX with your team number
   # teamXX-lb-template
   type    = string
-  default = ""
-}
-
-# This is the name of the Virtual Machine Template you want to create
-variable "WSNAME" {
-  # Use this standard and replace the XX with your team number
-  # teamXX-ws-template
-  type    = string
-  default = ""
-}
-
-# This is the name of the Virtual Machine Template you want to create
-variable "DBNAME" {
-  # Use this standard and replace the XX with your team number
-  # teamXX-db-template
-  type    = string
-  default = ""
-}
-
-# Team Number with leading Zero
-variable "TEAMNUMBER" {
-  type    = string
-  default = ""
+  default = "proxmox-focal-jenkins-template"
 }
