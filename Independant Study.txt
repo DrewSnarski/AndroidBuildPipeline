@@ -1,0 +1,7 @@
+Jenkins.io
+Use packer to build jenkins with terraform - recycle last semester files and change variables and such
+Sample code from blank template and add jenkins stuff 
+https://github.com/illinoistech-itm/jhajek/tree/master/itmt-430/packer-code-examples/sprint-04
+Google command line tools - cheat - download locally and put in packer script and push with file provisioner 
+Possible multi-node server system? Or dynamically allocate more resources?
+Jenkins shell password needed
