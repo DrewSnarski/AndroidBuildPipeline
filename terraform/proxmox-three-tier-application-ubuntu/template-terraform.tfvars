@@ -19,10 +19,9 @@ pm_log_file         = "terraform-plugin-proxmox.log" # (Optional; defaults to te
 # This is a variable to append to your cloud instances so they have a unique
 # FQDN -- this is needed for the gossip based DNS to work
 ###############################################################################
-yourinitials-lb = "androidbuildpipeline-ds" # Your team number with leading zeros to add to the vms so they have a unique name
+yourinitials = "androidbuildpipeline-ds" # Your team number with leading zeros to add to the vms so they have a unique name
 numberofvms        = 1   # quantity of that template to launch
-numberofvms-ws     = 1   # quantity of that template to launch
-desc-lb         = "Created by Drew Snarski"                    # What is the purpose of the TF template
+desc       = "Created by Drew Snarski"                    # What is the purpose of the TF template
 ###############################################################################
 # Name the template your created via Packer for Terraform to use to deploy
 # instances from
