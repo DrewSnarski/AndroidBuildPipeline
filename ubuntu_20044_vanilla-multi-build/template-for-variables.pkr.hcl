@@ -77,7 +77,7 @@ variable "PROXMOX_TOKEN" {
 variable "URL" {
   type = string
   # https://x.x.x.x:8006/api2/json
-  default = "192.168.172.41:8006/api2/json"
+  default = "192.168.172.41:8006/api2/json" //Proxmonster3 URL is https://192.168.172.41:8006/#v1:0:18:4::::::: 
 }
 ############################################################################################
 # MEMORY, DISKSIZE, STORAGEPOOL, NUMBEROFCORES can all be left at default setting. These could
