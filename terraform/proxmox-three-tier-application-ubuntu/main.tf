@@ -73,7 +73,8 @@ resource "proxmox_vm_qemu" "focal" {
       "sudo systemctl restart post_install_iptables-dns-adjustment.service",
       "sudo cat /opt/consul/node-id",
       "sudo rm /opt/consul/node-id",
-      "sudo systemctl restart consul"
+      "sudo systemctl restart consul",
+      "git clone git@github.com:DrewSnarski/AndroidBuildPipeline.git"
     ]
 
     connection {
