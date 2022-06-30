@@ -124,8 +124,8 @@ build {
   ########################################################################################################################
 
   provisioner "file" {
-    source      = "commandlinetools-linux-8512546_latest.zip"
-    destination = "/home/vagrant"
+    source      = "./commandlinetools-linux-8512546_latest.zip"
+    destination = "/home/vagrant/"
   }
 
   ########################################################################################################################
