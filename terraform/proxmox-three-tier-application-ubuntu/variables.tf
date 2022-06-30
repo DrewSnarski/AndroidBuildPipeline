@@ -43,4 +43,3 @@ variable "desc" {}
 
 variable "template_to_clone" {}
 
-variable "numberofvms" {}
