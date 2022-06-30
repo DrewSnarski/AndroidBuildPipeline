@@ -16,3 +16,21 @@ sudo apt-get dist-upgrade -y
 # Remove /etc/machine-id so that all the cloned machines will get their own IP address upon DHCP request
 sudo rm -f /etc/machine-id
 sudo touch /etc/machine-id
+
+
+# Install Jenkins
+curl -fsSL https://pkg.jenkins.io/debian/jenkins.io.key | sudo tee \
+ /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get install -y jenkins 
+
+# Install Java
+sudo apt install -y openjdk-11-jre
+
+# Start Jenkins
+sudo systemctl start jenkins
+
+# Download Github Repo
+git clone "git@github.com:DrewSnarski/AndroidBuildPipeline.git"
