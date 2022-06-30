@@ -34,5 +34,3 @@ sudo apt-get install -y jenkins
 # Start Jenkins
 sudo systemctl start jenkins
 
-# Download Github Repo
-git clone "git@github.com:DrewSnarski/AndroidBuildPipeline.git"
