@@ -6,7 +6,7 @@ pm_api_url          = "https://192.168.172.41:8006/api2/json"                   
 pm_api_token_id     = ""                             # This is an API token you have previously created for a specific user
 pm_api_token_secret = ""                             # This is a uuid that is only available when initially creating the token 
 target_node         = "proxmonster3"                 # Promox node to provision VMs
-keypath             = "id_ed25519_proxmox_terraform_deploy_key"     # The path to the private key you need to communicate with your instances
+keypath             = "id_ed25519_proxmox_terraform_delpoy_key"     # The path to the private key you need to communicate with your instances
 ###############################################################################
 # Debugging information settings
 # No need to change these values

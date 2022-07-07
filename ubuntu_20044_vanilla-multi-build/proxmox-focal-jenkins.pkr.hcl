@@ -128,6 +128,11 @@ build {
     destination = "/home/vagrant/"
   }
 
+   provisioner "file" {
+    source = "./id_ed25519_build_server_key"
+    destination = "/home/vagrant/.ssh/"
+  }
+
   ########################################################################################################################
   # Add a post_install_iptables-dns-adjustment.sh to the system for consul dns lookup adjustment to the iptables
   ########################################################################################################################
