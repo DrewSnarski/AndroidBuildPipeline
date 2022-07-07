@@ -37,7 +37,7 @@ sudo systemctl start jenkins
 #Unzip commandlinetools-linux-8512546_latest.zip
 sudo apt-get update
 sudo apt-get install -y unzip
-cd /home/vagrant/
+#cd /home/vagrant/
 unzip commandlinetools-linux-8512546_latest.zip
 ./cmdline-tools/bin/sdkmanager --install "cmdline-tools;latest" --sdk_root=/home/vagrant/android_sdk
 echo 'export ANDROID_SDK_ROOT=/home/vagrant/android_sdk/cmdline-tools/latest/bin' >> ~/.bashrc 
