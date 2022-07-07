@@ -34,3 +34,15 @@ sudo apt-get install -y jenkins
 # Start Jenkins
 sudo systemctl start jenkins
 
+#Unzip commandlinetools-linux-8512546_latest.zip
+cd /home/vagrant/
+unzip commandlinetools-linux-8512546_latest.zip
+./cmdline-tools/bin/sdkmanager --install "cmdline-tools;latest" --sdk_root=/home/vagrant/android_sdk
+echo 'export ANDROID_SDK_ROOT=/home/vagrant/android_sdk/cmdline-tools/latest/bin' >> ~/.bashrc 
+echo 'export PATH=$PATH:$ANDROID_SDK_ROOT' >> ~/.bashrc 
+
+echo 'export ANDROID_SDK_HOME=/home/vagrant/android_sdk' >> ~/.bashrc 
+echo 'export PATH=$PATH:$ANDROID_SDK_HOME/tools' >> ~/.bashrc 
+echo 'export PATH=$PATH:$ANDROID_SDK_HOME/platform-tools' >> ~/.bashrc 
+echo 'export JAVA_HOME=/usr/java/jdk11/bin' >> ~/.bashrc 
+echo 'export PATH=$PATH:$JAVA_HOME' >> ~/.bashrc 
