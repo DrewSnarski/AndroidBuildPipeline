@@ -103,6 +103,14 @@ source "proxmox-iso" "proxmox-focal-jenkins" {
 build {
   sources = ["source.proxmox-iso.proxmox-focal-jenkins"]
 
+ ########################################################################################################################
+  # Insert the Android SDK Tools
+  ########################################################################################################################
+
+  provisioner "file" {
+    source      = "./commandlinetools-linux-8512546_latest.zip"
+    destination = "/home/vagrant/"
+  }
 
   provisioner "shell" {
     execute_command = "echo 'vagrant' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'"
@@ -117,15 +125,6 @@ build {
     source      = "./system.hcl"
     destination = "/home/vagrant/"
   
-  }
-
-  ########################################################################################################################
-  # Insert the Android SDK Tools
-  ########################################################################################################################
-
-  provisioner "file" {
-    source      = "./commandlinetools-linux-8512546_latest.zip"
-    destination = "/home/vagrant/"
   }
 
    provisioner "file" {
