@@ -6,7 +6,7 @@
 
 **Introduction**	
 
-`	`It is very easy to code some application by yourself, and when developing an Android application, or APK, Android Studio is an amazing resource to use. But what about when multiple people need to work on it? Do you need to send the APK to everyone individually? To every other coder, tester, user, and anyone else? How do you make sure that there is a single source of truth that can be accessed? You need version control. GitHub is an amazing tool handling these requirements, but it does not compile all the code automatically and release it in an APK format. Doing so requires a more in-depth process. 
+It is very easy to code some application by yourself, and when developing an Android application, or APK, Android Studio is an amazing resource to use. But what about when multiple people need to work on it? Do you need to send the APK to everyone individually? To every other coder, tester, user, and anyone else? How do you make sure that there is a single source of truth that can be accessed? You need version control. GitHub is an amazing tool handling these requirements, but it does not compile all the code automatically and release it in an APK format. Doing so requires a more in-depth process. 
 
 *Tasks*
 
